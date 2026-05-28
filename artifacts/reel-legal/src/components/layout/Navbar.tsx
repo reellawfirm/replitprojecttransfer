@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [, setLocation] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +21,18 @@ export function Navbar() {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+    } else {
+      setLocation("/");
+      setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
     }
+  };
+
+  const goToAbout = () => {
+    setMobileMenuOpen(false);
+    setLocation("/about");
+    window.scrollTo({ top: 0 });
   };
 
   return (
@@ -48,6 +60,9 @@ export function Navbar() {
           <button onClick={() => scrollToSection("results")} className="font-medium text-sm tracking-wide uppercase hover:text-accent transition-colors">
             Results
           </button>
+          <button onClick={goToAbout} data-testid="link-about" className="font-medium text-sm tracking-wide uppercase hover:text-accent transition-colors">
+            About
+          </button>
           <Button 
             onClick={() => scrollToSection("contact")}
             className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-none px-6 py-5 font-bold uppercase tracking-widest text-sm"
@@ -69,6 +84,7 @@ export function Navbar() {
           <button onClick={() => scrollToSection("services")} className="font-serif text-3xl text-white hover:text-accent transition-colors">Practice Areas</button>
           <button onClick={() => scrollToSection("why-us")} className="font-serif text-3xl text-white hover:text-accent transition-colors">Why Us</button>
           <button onClick={() => scrollToSection("results")} className="font-serif text-3xl text-white hover:text-accent transition-colors">Results</button>
+          <button onClick={goToAbout} className="font-serif text-3xl text-white hover:text-accent transition-colors">About</button>
           <Button 
             onClick={() => scrollToSection("contact")}
             size="lg"
