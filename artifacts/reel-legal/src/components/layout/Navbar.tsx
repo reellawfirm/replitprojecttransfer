@@ -62,9 +62,10 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-primary text-primary-foreground shadow-md py-3" : "bg-transparent text-white py-6"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 text-white ${
+        isScrolled ? "shadow-md py-3" : "py-4"
       }`}
+      style={{ backgroundColor: "rgb(16,11,50)" }}
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
         <Link href="/" className="flex items-center z-50">
@@ -137,9 +138,10 @@ export function Navbar() {
 
         {/* Mobile Nav */}
         <div
-          className={`fixed inset-0 bg-primary z-40 flex flex-col items-center justify-center gap-6 transition-transform duration-300 ${
+          className={`fixed inset-0 z-40 flex flex-col items-center justify-center gap-6 transition-transform duration-300 ${
             mobileMenuOpen ? "translate-y-0" : "-translate-y-full"
           }`}
+          style={{ backgroundColor: "rgb(16,11,50)" }}
         >
           {/* Practice Areas accordion in mobile */}
           <div className="flex flex-col items-center w-full px-8">
