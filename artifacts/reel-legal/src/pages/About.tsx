@@ -99,21 +99,12 @@ export default function About() {
               transition={{ duration: 0.7 }}
               className="relative"
             >
-              <div className="relative bg-primary aspect-[4/5] w-full max-w-md flex items-end overflow-hidden">
-                <div
-                  className="absolute inset-0 opacity-20"
-                  style={{
-                    backgroundImage:
-                      "repeating-linear-gradient(-45deg, hsl(var(--accent)) 0px, hsl(var(--accent)) 1px, transparent 1px, transparent 50px)",
-                  }}
+              <div className="relative aspect-[4/5] w-full max-w-md overflow-hidden bg-muted">
+                <img
+                  src="/chris-reel.jpg"
+                  alt="Chris Reel, Attorney at Reel Legal Counsel"
+                  className="w-full h-full object-cover object-top"
                 />
-                <div className="relative z-10 p-10 w-full">
-                  <img
-                    src="/logo.png"
-                    alt="Reel Legal Counsel"
-                    className="h-16 w-auto object-contain opacity-90"
-                  />
-                </div>
               </div>
               <div className="absolute -bottom-6 -right-6 bg-accent text-white px-8 py-6 z-20">
                 <p className="font-serif text-3xl font-bold">7-Figure</p>
