@@ -87,7 +87,7 @@ export default function PropertyDamage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative bg-primary pt-40 pb-24 overflow-hidden">
+      <section className="relative bg-primary pt-16 pb-24 overflow-hidden">
         <div
           className="absolute inset-0 opacity-10"
           style={{

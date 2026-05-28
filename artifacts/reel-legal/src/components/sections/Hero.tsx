@@ -8,7 +8,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-[100dvh] flex items-center bg-primary overflow-hidden pt-20">
+    <section className="relative min-h-[100dvh] flex items-center bg-primary overflow-hidden pt-0">
       {/* Background abstract texture/pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-accent/40 via-transparent to-transparent"></div>
