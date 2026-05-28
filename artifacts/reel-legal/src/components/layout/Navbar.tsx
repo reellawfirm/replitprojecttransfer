@@ -68,7 +68,7 @@ export function Navbar() {
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
         <Link href="/" className="flex items-center z-50">
-          <img src="/logo.png" alt="Reel Legal Counsel Logo" className="h-36 w-auto object-contain" />
+          <img src="/logo.png" alt="Reel Legal Counsel Logo" className="h-72 w-auto object-contain" />
         </Link>
 
         {/* Desktop Nav */}
