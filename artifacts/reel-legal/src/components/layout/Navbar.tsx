@@ -67,11 +67,8 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 z-50">
-          <img src="/logo.png" alt="Reel Legal Counsel Logo" className="h-10 w-auto object-contain" />
-          <span className="font-bold text-xl tracking-wide hidden sm:block text-white">
-            REEL LEGAL
-          </span>
+        <Link href="/" className="flex items-center z-50">
+          <img src="/logo.png" alt="Reel Legal Counsel Logo" className="h-16 w-auto object-contain" />
         </Link>
 
         {/* Desktop Nav */}

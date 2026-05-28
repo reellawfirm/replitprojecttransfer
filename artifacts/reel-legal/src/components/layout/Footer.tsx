@@ -14,12 +14,8 @@ export function Footer() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 border-b border-white/10 pb-16">
           <div className="md:col-span-2">
-            <Link href="/" className="flex items-center gap-4 mb-6">
-              <img src="/logo.png" alt="Reel Legal Counsel Logo" className="h-14 w-auto object-contain" />
-              <div>
-                <h3 className="font-serif font-bold text-2xl tracking-wide">REEL LEGAL</h3>
-                <p className="text-accent text-sm font-bold tracking-widest uppercase mt-1">Counsel</p>
-              </div>
+            <Link href="/" className="flex items-center mb-6">
+              <img src="/logo.png" alt="Reel Legal Counsel Logo" className="h-20 w-auto object-contain" />
             </Link>
             <p className="text-gray-300 text-lg max-w-md font-serif italic">
               "Advocacy that levels the playing field."
