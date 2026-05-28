@@ -15,7 +15,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 border-b border-white/10 pb-16">
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center mb-6">
-              <img src="/logo.png" alt="Reel Legal Counsel Logo" className="h-[7.5rem] w-auto object-contain" />
+              <img src="/logo.png" alt="Reel Legal Counsel Logo" className="h-36 w-auto object-contain" style={{ mixBlendMode: "screen" }} />
             </Link>
             <p className="text-gray-300 text-lg max-w-md font-serif italic">
               "Advocacy that levels the playing field."
