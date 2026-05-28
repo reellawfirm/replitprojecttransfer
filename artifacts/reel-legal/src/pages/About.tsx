@@ -107,10 +107,7 @@ export default function About() {
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-accent text-white px-8 py-6 z-20">
-                <p className="font-serif text-3xl font-bold">7-Figure</p>
-                <p className="text-sm font-bold uppercase tracking-widest mt-1 text-white/80">
-                  Unanimous Jury Verdict
-                </p>
+                <p className="font-bold text-2xl tracking-wide">Meet Chris</p>
               </div>
             </motion.div>
 
@@ -158,6 +155,41 @@ export default function About() {
               </Button>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Jurisdictions */}
+      <section className="py-16 bg-white border-t border-border">
+        <div className="container mx-auto px-6 md:px-12">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-4xl"
+          >
+            <p className="text-accent font-bold uppercase tracking-widest text-sm mb-3">
+              Licensed Jurisdictions
+            </p>
+            <h2 className="font-bold text-2xl md:text-3xl text-primary mb-8">
+              Admitted to Practice
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {[
+                "Ohio",
+                "Florida",
+                "U.S. District Court for the Southern District of Ohio",
+                "U.S. District Court for the Northern District of Ohio",
+                "U.S. District Court for the Southern District of Florida",
+                "U.S. District Court for the Middle District of Florida",
+              ].map((court, i) => (
+                <div key={i} className="flex items-start gap-3">
+                  <CheckCircle className="text-accent mt-0.5 shrink-0" size={18} />
+                  <span className="text-foreground/80 text-base">{court}</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -226,24 +258,24 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-accent">
+      <section className="py-24 bg-white border-t border-border">
         <div className="container mx-auto px-6 md:px-12 text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="font-serif text-4xl md:text-5xl font-bold text-white mb-6"
+            className="font-bold text-4xl md:text-5xl text-primary mb-6"
           >
-            Ready to put Chris in your corner?
+            Get Your Free Case Evaluation
           </motion.h2>
-          <p className="text-white/80 text-xl mb-10 max-w-xl mx-auto">
+          <p className="text-foreground/60 text-xl mb-10 max-w-xl mx-auto">
             Schedule a free case evaluation and find out what it looks like to have a relentless advocate on your side.
           </p>
           <Button
             data-testid="button-cta-evaluation"
             onClick={scrollToContact}
-            className="bg-primary text-white hover:bg-primary/90 rounded-none px-10 py-6 font-bold uppercase tracking-widest text-sm"
+            className="bg-accent text-white hover:bg-accent/90 rounded-none px-10 py-6 font-bold uppercase tracking-widest text-sm"
           >
             Get a Free Case Evaluation
           </Button>
