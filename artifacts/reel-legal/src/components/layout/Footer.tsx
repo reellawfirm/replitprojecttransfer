@@ -31,7 +31,6 @@ export function Footer() {
             <ul className="space-y-4">
               <li><button onClick={() => scrollToSection("services")} className="text-gray-300 hover:text-white transition-colors">Practice Areas</button></li>
               <li><button onClick={() => scrollToSection("why-us")} className="text-gray-300 hover:text-white transition-colors">Our Approach</button></li>
-              <li><button onClick={() => scrollToSection("results")} className="text-gray-300 hover:text-white transition-colors">Track Record</button></li>
               <li><button onClick={() => scrollToSection("testimonials")} className="text-gray-300 hover:text-white transition-colors">Testimonials</button></li>
               <li><Link href="/about" className="text-gray-300 hover:text-white transition-colors">About Chris Reel</Link></li>
               <li><button onClick={() => scrollToSection("contact")} className="text-gray-300 hover:text-white transition-colors">Contact Us</button></li>

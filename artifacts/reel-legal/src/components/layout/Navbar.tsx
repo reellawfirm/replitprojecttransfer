@@ -57,9 +57,6 @@ export function Navbar() {
           <button onClick={() => scrollToSection("why-us")} className="font-medium text-sm tracking-wide uppercase hover:text-accent transition-colors">
             Why Us
           </button>
-          <button onClick={() => scrollToSection("results")} className="font-medium text-sm tracking-wide uppercase hover:text-accent transition-colors">
-            Results
-          </button>
           <button onClick={goToAbout} data-testid="link-about" className="font-medium text-sm tracking-wide uppercase hover:text-accent transition-colors">
             About
           </button>
@@ -83,7 +80,6 @@ export function Navbar() {
         <div className={`fixed inset-0 bg-primary z-40 flex flex-col items-center justify-center gap-8 transition-transform duration-300 ${mobileMenuOpen ? "translate-y-0" : "-translate-y-full"}`}>
           <button onClick={() => scrollToSection("services")} className="font-serif text-3xl text-white hover:text-accent transition-colors">Practice Areas</button>
           <button onClick={() => scrollToSection("why-us")} className="font-serif text-3xl text-white hover:text-accent transition-colors">Why Us</button>
-          <button onClick={() => scrollToSection("results")} className="font-serif text-3xl text-white hover:text-accent transition-colors">Results</button>
           <button onClick={goToAbout} className="font-serif text-3xl text-white hover:text-accent transition-colors">About</button>
           <Button 
             onClick={() => scrollToSection("contact")}

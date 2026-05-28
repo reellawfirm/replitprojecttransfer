@@ -32,14 +32,16 @@ export function Hero() {
             </div>
           </motion.div>
 
-          <motion.h1 
-            className="text-5xl md:text-7xl lg:text-8xl font-serif font-black text-white leading-[1.1] mb-8"
+          <motion.h1
+            className="font-serif leading-[1.1] mb-8"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
-            Advocacy that <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-orange-300">
+            <span className="block text-3xl md:text-4xl lg:text-5xl italic font-medium text-accent mb-2">
+              Advocacy that
+            </span>
+            <span className="block text-5xl md:text-7xl lg:text-8xl font-bold text-white">
               levels the playing field.
             </span>
           </motion.h1>
