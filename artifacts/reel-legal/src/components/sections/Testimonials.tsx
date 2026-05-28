@@ -6,7 +6,7 @@ const testimonials = [
     quote:
       "I have had the pleasure of working closely with Chris Reel on multiple litigation matters, and he is truly an exceptional attorney. Chris has a keen and strategic sense for resolving cases efficiently without ever sacrificing quality or advocacy. He is completely at ease in the courtroom, with an impressive ability to think on his feet and respond thoughtfully and effectively to anything that comes his way. What stands out most is his calm, steady presence. He communicates with clarity and respect, ensuring that his points are heard and taken seriously by the court and opposing counsel alike.\n\nBeyond his litigation skills, Chris has a remarkable ability to read the personality and needs of his clients. He meets each individual exactly where they need to be, instilling confidence and trust that their case is in capable hands. That combination of legal sharpness, emotional intelligence, and composure is rare. Chris is very compassionate and has impeccable ethics. Chris Reel is an attorney of the highest caliber, and any client or colleague would be fortunate to work with him.",
     author: "Marlene C.",
-    context: "Litigation Client",
+    context: "Litigation Professional",
   },
   {
     quote:
@@ -24,7 +24,7 @@ const testimonials = [
     quote:
       "I am grateful to Chris Reel for his legal help in settling a business contract dispute. Chris understood the subtleties in the contract verbiage, worked diligently to represent me well, and delivered a successful outcome. He is articulate and has a unique ability to explain legalese to the layperson. I always felt like he heard my voice, understood my needs, and acted accordingly.\n\nI found Chris to be honest and straightforward, and so I trusted him to represent me fairly. Chris was professional at all times, including in his demeanor with the other parties we worked with. I would without reservation recommend Chris Reel for legal counsel.",
     author: "Mike R.",
-    context: "Contract Dispute Client",
+    context: "Litigation Client",
   },
 ];
 

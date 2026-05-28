@@ -42,15 +42,15 @@ export function Footer() {
             <ul className="space-y-4 text-gray-300">
               <li className="flex items-start gap-3">
                 <span className="font-bold mt-1">A:</span>
-                <span>123 Legal Avenue, Suite 400<br />New York, NY 10001</span>
+                <span>1223 East Main Street, Suite 301<br />Columbus, Ohio 43205</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="font-bold">P:</span>
-                <span>(555) 123-4567</span>
+                <span>(614) 233-1254</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="font-bold">E:</span>
-                <span>info@reellegal.com</span>
+                <span>hello@reellawfirm.com</span>
               </li>
             </ul>
           </div>

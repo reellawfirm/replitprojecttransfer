@@ -27,7 +27,7 @@ export function Hero() {
           >
             <div className="inline-block border-l-4 border-accent pl-4 mb-8">
               <h2 className="text-accent font-bold uppercase tracking-[0.2em] text-sm md:text-base">
-                Boutique Litigation Firm
+                Boutique Civil Litigation Firm
               </h2>
             </div>
           </motion.div>

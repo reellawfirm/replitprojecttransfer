@@ -51,11 +51,11 @@ export function Contact() {
               <div className="space-y-6 text-gray-300">
                 <div>
                   <p className="text-accent font-bold text-sm uppercase tracking-widest mb-1">Call Us</p>
-                  <p className="text-2xl font-serif">(555) 123-4567</p>
+                  <p className="text-2xl font-serif">(614) 233-1254</p>
                 </div>
                 <div>
                   <p className="text-accent font-bold text-sm uppercase tracking-widest mb-1">Email</p>
-                  <p className="text-xl">evaluations@reellegal.com</p>
+                  <p className="text-xl">hello@reellawfirm.com</p>
                 </div>
               </div>
             </motion.div>
