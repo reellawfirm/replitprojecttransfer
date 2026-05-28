@@ -106,9 +106,6 @@ export default function About() {
                   className="w-full h-full object-cover object-top"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-accent text-white px-8 py-6 z-20">
-                <p className="font-bold text-2xl tracking-wide">Meet Chris</p>
-              </div>
             </motion.div>
 
             {/* Right: bio text */}
